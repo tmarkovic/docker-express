@@ -1,0 +1,32 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "A simple express api for docker demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmarkovic/docker-express.git"
+  },
+  "keywords": [
+    "docker",
+    "express"
+  ],
+  "author": "theodore markovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmarkovic/docker-express/issues"
+  },
+  "homepage": "https://github.com/tmarkovic/docker-express#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cors": "^2.8.1",
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "mongoose": "^4.8.4"
+  }
+}
