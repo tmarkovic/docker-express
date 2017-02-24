@@ -12,7 +12,10 @@ mongoose.connect(dbHost);
 // create mongoose schema
 const userSchema = new mongoose.Schema({
   name: String,
-  age: Number
+  age: Number,
+  birthday: Date,
+  sex: Number,
+  phone: String
 });
 
 // create mongoose model
@@ -45,7 +48,10 @@ router.get('/users/:id', (req, res) => {
 router.post('/users', (req, res) => {
     let user = new User({
         name: req.body.name,
-        age: req.body.age
+        age: req.body.age,
+          birthday: req.body.birthday,
+  sex: req.body.sex,
+  phone: req.body.phone
     });
 
     user.save(error => {
